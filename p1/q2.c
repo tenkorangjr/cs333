@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(int argc, char* argv[]) {
+
+  short int var_1 = 10; // Should look like 0A 00
+  short int var_2 = 15; // should look like 0F 00
+  short int var_4 = 32; // should look like 20 00
+  short int var_5 = 64; // should look like 40 00
+
+  unsigned char *ptr = (unsigned char *)&ptr;
+
+  for (int i = 0; i < 100; i++) {
+    printf("i: %d value: %02X\n", i, ptr[i]);
+  }
+
+  return 0;
+}
