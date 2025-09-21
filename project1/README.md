@@ -2,7 +2,7 @@
 ### Michael Tenkorang 
 ### 09/18/2025
 
-***Google Sites Report: ***
+***Google Sites Report: [https://sites.google.com/colby.edu/tenkorangcs333/project-1](https://sites.google.com/colby.edu/tenkorangcs333/project-1)***
 
 ## Directory Layout:
 ```
@@ -157,4 +157,4 @@ gcc -o extension3 extension3.c
 
 ### Extension 3
 **Description:**
-For my final extension, I researched a fifth language which can be found here.
+For my final extension, I researched a fifth language which can be found [here](https://sites.google.com/colby.edu/tenkorangcs333/project-1).
