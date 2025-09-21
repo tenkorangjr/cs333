@@ -1,6 +1,17 @@
+/**
+ * Writing basic programs in C
+ *
+ * Michael Tenkorang Ofori
+ * September 3rd, 2025
+ */
+
+
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+ * Function to determine the memory layout of structs
+ * */
 int main(int argc, char *argv[]) {
 
   // struct for char, int, short int (4.1)

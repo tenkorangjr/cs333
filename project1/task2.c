@@ -1,6 +1,16 @@
+/**
+ * Writing basic programs in C
+ *
+ * Michael Tenkorang Ofori
+ * September 3rd, 2025
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+ *Function to determine the overall layout of the stack
+ * */
 int main(int argc, char* argv[]) {
 
   // Initializing varaiables

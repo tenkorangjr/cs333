@@ -6,6 +6,7 @@
  * A goofy example to demonstrate need for care when managing strings in C.
  *
  * Modified by Ying Li 08/15/2024
+ * Modified by Michael Tenkorang 09/18/2025
  */
 
 #include <stdio.h>

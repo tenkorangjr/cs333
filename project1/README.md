@@ -24,65 +24,85 @@ OS: macOS Sequoia 15.6.1
 Apple clang version 15.0.0 (clang-1500.3.9.4)
 
 ## Part I 
-### task 1
-**Compile:** $ gcc task1.c -o task1
+### Task 1
+**Compile:** `$ gcc task1.c -o task1`
 
-**Run:** $ ./task1
+**Run:** `$ ./task1`
 
 **Output:**
 ![Screenshot of c task 1](images/ctask1.png)
 
 **Q.b.** 
-
-Your answer is here ... 
+The machine I am using is a little endian machine
 
 **Q.c.** 
-
-Your justification is here ...
+From the way it stored the value of `my_short`, it is evident that for the value `10`, the value in memory `0A` appears first in memory before the subsequent 0s.
+From the definition of little-endian, since the most significant 2 bytes of my value appear first in the memory address, my machine uses little-endian.
  
-###task 2
-**Compile:** $ gcc -o task2 task2.c
+### Task 2
+**Compile:** `$ gcc task2.c -o task2`
 
-**Run:** $ ./task2
+**Run:** `$ ./task2`
 
 **Output:**
 ![Screenshot of c task 2](images/ctask2.png)
 
 **Q.b.** 
-
-Your answer is here ... 
+As we move forward in reading the memory in the stack, we see the memory that has been used by instructions in our program that had been already run.
 
 **Q. c.**
-
-Your answer is here ...
+Yes. I can’t make sense of the first 8 bytes.
 
 **Q. d.**
+I can find the variables I initialized because I knew the hexadecimal representations and I knew they took 2 bytes each. To find them, I looked through the print out and intentionally looked for the pattern I was expecting “4000200004000A00”
 
-Your answer is here ...
+### Task 3
+**Compile:** `$ gcc task3.c -o task3`
 
+**Run:** `$ ./task3`
 
-... Other C tasks are there ...
+**Without Free:**
+![Screenshot of c task 3](images/ctask3.1.png)
 
-*Please note that you don't need Part II for Project 1 as it doesn't require you to write any programs. However, you are expected to include Part II for future projects to illustrate how to compile and run your selected language programs and the outputs you get from them.*
+**With Free:**
+![Screenshot of c task 3](images/ctask3.2.png)
 
-## Part II - JS 
-###task 1 
-**Compile:** 
+**Q.b.** 
+With the `free`, the “Real Memory Size” is a lot less than when the `free` method is not used. In our case, the Real Memory Size is 884.7MB without the free and 1.3MB with free.
 
-**Run:** 
+### Task 4
+**Compile:** `$ gcc task4.c -o task4`
 
-**Output:**
+**Run:** `$ ./task4`
 
-###task 2
-**Compile:** 
+**Ordering: Char, int, short int**
+![Screenshot of c task 4](images/ctask4.1.jpg)
 
-**Run:** 
+**Ordering: int, char, short int**
+![Screenshot of c task 4](images/ctask4.2.jpg)
 
-**Output:**
+**Ordering: short int, char, int**
+![Screenshot of c task 4](images/ctask4.3.jpg)
 
-... Other selected language tasks are there
+**Q.a.** 
+No, it doesn’t match my expectations since the char apparently now (in 4.1) uses 4 bytes instead of 1 byte and short int uses 4 bytes instead of 1 byte. In 4.2 and 4.3 also, char uses 2 bytes instead of 1 byte.
 
-*Please have a description of each extension you undertook*
+**Q.b.** 
+Yes, padding is added to char almost every single time.
+
+### Task 5
+**Compile:** `$ gcc task5.c -o task5`
+
+**Run:** `$ ./task5`
+
+**Q.a.**
+Mike Tenkorang
+
+**Q.b** 
+![Screenshot of c task 5](images/ctask5.png)
+
+**Q.c** 
+When we set the string to a value more than 9 characters, the characters are written in memory allocated for newAccount.balance.
 
 ## Extensions
 ###extension 1
