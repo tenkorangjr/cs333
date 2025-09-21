@@ -6,12 +6,22 @@
 
 ## Directory Layout:
 ```
-├── BankExample
 ├── BankExample.c
-├── practice
-│   ├── 2.c
-│   ├── main
-│   └── main.c
+├── extension1.c
+├── extension2.c
+├── extension3.c
+├── images
+│   ├── ctask1.png
+│   ├── ctask2.png
+│   ├── ctask3.1.png
+│   ├── ctask3.2.png
+│   ├── ctask4.1.jpg
+│   ├── ctask4.2.jpg
+│   ├── ctask4.3.jpg
+│   ├── ctask5.png
+│   ├── extension1.png
+│   ├── extension2.png
+│   └── extension3.png
 ├── README.md
 ├── task1.c
 ├── task2.c
