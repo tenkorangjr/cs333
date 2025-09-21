@@ -10,6 +10,7 @@
 
 int main(int argc, char *argv[]) {
 
+  // initializing variables 
   char my_char = 'a';
   short int my_short = 10;
   int my_int = -15;
@@ -19,26 +20,30 @@ int main(int argc, char *argv[]) {
 
   //printf("my_char: %c, my_short: %d, my_int: %d, my_long: %ld, my_float: %f, my_double: %f", my_char, my_short, my_int, my_long, my_float, my_double);
 
+  // initializing my pointer at char's address
   unsigned char *ptr;
   ptr = (unsigned char *)&(my_char);
-
+  // looping through size of char
   printf("Char: \n");
   for (int i = 0; i < sizeof(char); i++) {
     printf("%d: %02X\n", i, ptr[i]);
   }
 
+  // assigning ptr to starting memory address of short int
   ptr = (unsigned char *)&(my_short);
   printf("Short: \n");
   for (int i = 0; i < sizeof(short int); i++) {
     printf("%d: %02X\n", i, ptr[i]);
   }
 
+  // assigning ptr to address of int
   ptr = (unsigned char *)&(my_int);
   printf("Int:\n");
   for (int i = 0; i < sizeof(int); i++) {
     printf("%d: %02X\n", i, ptr[i]);
   }
 
+  // assigning ptr to address of long
   ptr = (unsigned char *)&(my_long);
   printf("Long:\n");
   for (int i = 0; i < sizeof(long int); i++) {
