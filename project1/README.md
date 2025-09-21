@@ -155,6 +155,6 @@ gcc -o extension3 extension3.c
 **Output:**
 ![Screenshot of Extension3](images/extension3.png)
 
-### Extension 3
+### Extension 4
 **Description:**
 For my final extension, I researched a fifth language which can be found [here](https://sites.google.com/colby.edu/tenkorangcs333/project-1).
