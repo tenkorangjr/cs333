@@ -105,20 +105,46 @@ Mike Tenkorang
 When we set the string to a value more than 9 characters, the characters are written in memory allocated for newAccount.balance.
 
 ## Extensions
-###extension 1
-**Description**
+### Extension 1
+**Description:**
+Generating a segmentation fault. I initialized a pointer to null and then set the value for the null address.
 
 **Compile:** 
+gcc -o extension1 extension1.c
 
 **Run:** 
+./extension1
 
 **Output:**
+![Screenshot of Extension1](images/extension1.png)
 
-###extension 2
-**Description**
+### Extension 2
+**Description:**
+For my second extension, I generated a buffer overread runtime error by initializing a two-integer array and accessing indices 2, 3, ..., 10. This error was not caught by the compiler. It is thus noticeable that this is something that can be leveraged for malicious purposes.
 
 **Compile:** 
+gcc -o extension2 extension2.c
 
 **Run:** 
+./extension2
 
 **Output:**
+![Screenshot of Extension2](images/extension2.png)
+
+
+### Extension 3
+**Description:**
+Made Task 5 more robust by ensuring the balance is not affected by the name of the user. This was accomplished by initializing the balance before the name inside the `Account` struct definition.
+
+**Compile:** 
+gcc -o extension3 extension3.c
+
+**Run:** 
+./extension3
+
+**Output:**
+![Screenshot of Extension3](images/extension3.png)
+
+### Extension 3
+**Description:**
+For my final extension, I researched a fifth language which can be found here.
